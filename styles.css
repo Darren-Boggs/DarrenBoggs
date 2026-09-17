@@ -53,7 +53,7 @@ a {
 
 .brand {
   text-decoration: none;
-  font: 700 1.5rem/1 "Space Grotesk", sans-serif;
+  : 700 1.5rem/1 "Space Grotesk", sans-serif;
 }
 
 .brand span {
@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 h1, h2, h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.15;
   margin-top: 0;
 }
