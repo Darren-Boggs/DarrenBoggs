@@ -447,9 +447,8 @@ footer {
   .footer-inner {
     flex-direction: column;
   }
+}
 
-  .project-card .button {
+.project-card .button {
   margin-top: 20px;
   }
-  
-}
