@@ -480,3 +480,21 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.single-project-image {
+  max-width: 900px;
+  margin: 25px auto 40px;
+  text-align: center;
+}
+
+.single-project-image img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+.single-project-image p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
