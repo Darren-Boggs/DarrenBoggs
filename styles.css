@@ -498,3 +498,16 @@ footer {
   font-size: 0.9rem;
   margin-top: 8px;
 }
+
+.project-page h2 {
+  font-size: 2.2rem;
+  margin-top: 50px;
+  margin-bottom: 18px;
+}
+
+.project-page h3 {
+  font-size: 1.25rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: var(--accent-2);
+}
