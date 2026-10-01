@@ -89,6 +89,8 @@ nav a:hover {
   background:
     radial-gradient(circle at 80% 10%, rgba(94,164,255,0.13), transparent 32%),
     linear-gradient(180deg, #101620 0%, var(--bg) 100%);
+  
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
