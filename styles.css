@@ -570,3 +570,9 @@ footer {
     radial-gradient(circle at 75% 10%, rgba(69, 129, 255, 0.14), transparent 35%),
     linear-gradient(180deg, rgba(31, 71, 120, 0.18), transparent 35%);
 }
+
+.project-intro {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(120, 160, 210, 0.35);
+}
