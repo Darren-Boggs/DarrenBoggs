@@ -540,3 +540,11 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.project-detail-card {
+  margin-top: 25px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+}
