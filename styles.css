@@ -454,3 +454,29 @@ footer {
   display: flex;
   width: fit-content;
 }
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.project-image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+.project-image-grid p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+  .project-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
