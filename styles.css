@@ -576,3 +576,24 @@ footer {
   margin-bottom: 35px;
   border-bottom: 1px solid rgba(120, 160, 210, 0.35);
 }
+
+
+.two-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.two-image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 800px) {
+  .two-image-grid {
+    grid-template-columns: 1fr;
+  }
+}
