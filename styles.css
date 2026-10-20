@@ -650,3 +650,34 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.gallery-card img {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: rgba(0, 0, 0, 0.82);
+
+  z-index: 9999;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
