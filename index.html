@@ -474,5 +474,30 @@
       <span>Built for GitHub Pages</span>
     </div>
   </footer>
+
+
+  <div id="lightbox" class="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  const galleryImages = document.querySelectorAll('.gallery-card img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+</script>
+
+
+  
 </body>
 </html>
