@@ -2,38 +2,87 @@
 <html lang="en">
 
 <head>
+
+  <!-- =========================
+       PAGE SETUP
+       ========================= -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Senior Design | Darren Boggs</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- =========================
+       FONTS
+       ========================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =========================
+       MAIN STYLESHEET
+       ========================= -->
 
   <link rel="stylesheet" href="../../styles.css">
+
 </head>
+
 
 <body>
 
+
+  <!-- =========================
+       CAPSTONE PAGE
+       ========================= -->
+
   <main class="section project-page">
+
     <div class="container">
 
-      <a href="../../index.html">← Back to Portfolio</a>
 
-      <p class="section-kicker">Senior Design</p>
+      <!-- =========================
+           PAGE HEADER
+           ========================= -->
 
-      <h1>Automated Isocyanate Agitation System</h1>
+      <a href="../../index.html#projects">
+        ← Back to Projects
+      </a>
+
+      <p class="section-kicker">
+        Senior Design
+      </p>
+
+      <h1>
+        Automated Isocyanate Agitation System
+      </h1>
 
       <p class="project-intro">
-  Senior design project in progress for Atmus Filtration Technologies.
-  The goal of the project is to automate a polyurethane agitation process
-  that previously required manual rotation on a scheduled basis.
-</p>
+        Senior design project in progress for Atmus Filtration Technologies.
+        The goal of the project is to automate an isocyanate agitation process
+        that previously required manual rotation on a scheduled basis.
+      </p>
 
-      
-      
+
+      <!-- =========================
+           PROJECT OVERVIEW
+           ========================= -->
+
       <h2>Project Overview</h2>
 
       <p>
@@ -42,141 +91,316 @@
         expected motion occurred.
       </p>
 
+
+      <!-- =========================
+           MY ROLE + REQUIREMENTS
+           ========================= -->
+
       <div class="project-summary-grid">
 
-  <div class="project-summary-card">
-    <h2>My Role</h2>
 
-    <ul>
-      <li>PLC programming and sequence development</li>
-      <li>HMI screen development</li>
-      <li>Motor and gearbox selection</li>
-      <li>Encoder integration</li>
-      <li>Electrical enclosure layout</li>
-      <li>Power distribution and wiring design</li>
-      <li>Controls troubleshooting and system integration</li>
-    </ul>
-  </div>
+        <!-- MY ROLE -->
 
-  <div class="project-summary-card">
-    <h2>System Requirements</h2>
+        <div class="project-summary-card">
 
-    <ul>
-      <li>Complete 10 agitator rotations per 24 hours</li>
-      <li>Confirm completed rotations using encoder feedback</li>
-      <li>Operate at approximately 50 RPM</li>
-      <li>Provide approximately 10 in-lb of required torque</li>
-      <li>Provide manual controls through the HMI</li>
-      <li>Use a compact industrial control enclosure</li>
-    </ul>
-  </div>
+          <h2>My Role</h2>
 
-</div>
+          <ul>
+            <li>PLC programming and sequence development</li>
+            <li>HMI screen development</li>
+            <li>Motor and gearbox selection</li>
+            <li>Encoder integration</li>
+            <li>Electrical enclosure layout</li>
+            <li>Power distribution and wiring design</li>
+            <li>Controls troubleshooting and system integration</li>
+          </ul>
+
+        </div>
+
+
+        <!-- SYSTEM REQUIREMENTS -->
+
+        <div class="project-summary-card">
+
+          <h2>System Requirements</h2>
+
+          <ul>
+            <li>Complete 10 agitator rotations per 24 hours</li>
+            <li>Confirm completed rotations using encoder feedback</li>
+            <li>Operate at approximately 50 RPM</li>
+            <li>Provide approximately 10 in-lb of required torque</li>
+            <li>Provide manual controls through the HMI</li>
+            <li>Use a compact industrial control enclosure</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           CONTROLS & AUTOMATION
+           ========================= -->
 
       <h2>Controls & Automation</h2>
 
-    <div class="project-detail-card">
-
-  <h3>PLC Logic Development</h3>
-
-  <p>
-      The controls system uses a CLICK Plus PLC and C-more HMI to manage the
-  automatic sequence, operator commands, interlocks, motor control, timing,
-  and encoder confirmation. Initial PLC logic was developed to establish the
-  sequence structure and rotation-confirmation process before final system
-  implementation and testing.
-  </p>
-
-  <div class="single-project-image">
-    <img src="PLC_Rough_Draft.png" alt="CLICK PLC logic development">
-    <p>Early PLC logic development for the automated agitation sequence.</p>
-  </div>
+      <div class="project-detail-card">
 
 
+        <!-- PLC LOGIC DEVELOPMENT -->
 
+        <h3>PLC Logic Development</h3>
 
-      
-      <h3>HMI Development</h3>
+        <p>
+          The controls system uses a CLICK Plus PLC and C-more HMI to manage the
+          automatic sequence, operator commands, interlocks, motor control, timing,
+          and encoder confirmation. Initial PLC logic was developed to establish the
+          sequence structure and rotation-confirmation process before final system
+          implementation and testing.
+        </p>
 
-<p>
-  The C-more HMI provides operators with manual controls, real-time equipment
-  status, and clear feedback from the agitation system. Separate screens were
-  developed for automatic operation, manual control, navigation, and I/O status
-  to keep the interface simple and easy to use.
-</p>
+        <div class="single-project-image">
 
-<div class="project-image-grid">
+          <img
+            src="PLC_Rough_Draft.png"
+            alt="CLICK PLC logic development"
+          >
 
-  <div>
-    <img src="HMI_Main.png" alt="Main operator screen">
-    <p>Main operator screen</p>
-  </div>
+          <p>
+            Early PLC logic development for the automated agitation sequence.
+          </p>
 
-  <div>
-    <img src="HMI_Manual.png" alt="Manual control screen">
-    <p>Manual control screen</p>
-  </div>
-
-  <div>
-    <img src="HMI_Auto.png" alt="Auto control screen">
-    <p>Auto control screen</p>
-  </div>
-
-  <div>
-    <img src="HMI_Menu.png" alt="Menu screen">
-    <p>Menu screen</p>
-  </div>
-
-  <div>
-    <img src="HMI_IO.png" alt="System status I/O screen">
-    <p>System status I/O screen</p>
-  </div>
-
-</div>
         </div>
-      
+
+
+        <!-- HMI DEVELOPMENT -->
+
+        <h3>HMI Development</h3>
+
+        <p>
+          The C-more HMI provides operators with manual controls, real-time equipment
+          status, and clear feedback from the agitation system. Separate screens were
+          developed for automatic operation, manual control, navigation, and I/O status
+          to keep the interface simple and easy to use.
+        </p>
+
+
+        <!-- HMI IMAGE GALLERY -->
+
+        <div class="project-image-grid">
+
+          <div>
+            <img
+              src="HMI_Main.png"
+              alt="Main operator screen"
+            >
+            <p>Main operator screen</p>
+          </div>
+
+          <div>
+            <img
+              src="HMI_Manual.png"
+              alt="Manual control screen"
+            >
+            <p>Manual control screen</p>
+          </div>
+
+          <div>
+            <img
+              src="HMI_Auto.png"
+              alt="Auto control screen"
+            >
+            <p>Auto control screen</p>
+          </div>
+
+          <div>
+            <img
+              src="HMI_Menu.png"
+              alt="Menu screen"
+            >
+            <p>Menu screen</p>
+          </div>
+
+          <div>
+            <img
+              src="HMI_IO.png"
+              alt="System status I/O screen"
+            >
+            <p>System status I/O screen</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           MECHANICAL & ELECTRICAL DESIGN
+           ========================= -->
 
       <h2>Mechanical & Electrical Design</h2>
 
-<div class="project-detail-card">
+      <div class="project-detail-card">
 
-  <h3>Motor & Gearbox Selection</h3>
 
-  <p>
-    Motor and gearbox options were evaluated based on torque, speed,
-    physical size, control method, and compatibility with the available
-    24 VDC control system.
-  </p>
+        <!-- MOTOR & GEARBOX -->
 
-  <h3>Electrical Design</h3>
+        <h3>Motor & Gearbox Selection</h3>
 
-  <p>
-    The project includes enclosure layout, circuit protection, terminal
-    blocks, power distribution, Ethernet communication, motor wiring,
-    operator controls, and documentation for installation and troubleshooting.
-  </p>
+        <p>
+          Motor and gearbox options were evaluated based on torque, speed,
+          physical size, control method, and compatibility with the available
+          24 VDC control system.
+        </p>
 
-  <div class="single-project-image">
-  <img src="Electrical_Schematic.png" alt="Electrical control schematic">
-  <p>Electrical schematic developed for the PLC cabinet.</p>
-</div>
 
-</div>
+        <!-- ELECTRICAL DESIGN -->
 
-      <h2>Project Status</h2>
+        <h3>Electrical Design</h3>
+
+        <p>
+          The project includes enclosure layout, circuit protection, terminal
+          blocks, power distribution, Ethernet communication, motor wiring,
+          operator controls, and documentation for installation and troubleshooting.
+        </p>
+
+
+        <!-- ELECTRICAL SCHEMATIC -->
+
+        <div class="single-project-image">
+
+          <img
+            src="Electrical_Schematic.png"
+            alt="Electrical control schematic"
+          >
+
+          <p>
+            Electrical schematic developed for the PLC cabinet.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           CURRENT BUILD & TESTING
+           ========================= -->
+
+      <h2>Current Build & Testing</h2>
+
+      <div class="project-detail-card">
+
+        <h3>From Parts to a Working System</h3>
+
+        <p>
+          Once the parts arrived, we got straight to work. The team handled cutting,
+          drilling, and mounting the mechanical components while I focused on routing
+          the cabinet wiring, running field connections, and landing each component
+          into the control system.
+        </p>
+
+        <p>
+          This was the point where the project really came together. The cabinet went
+          from a layout on paper to a fully wired control system with the PLC, HMI,
+          motor drive, safety circuit, contactor, breakers, terminal blocks, and field
+          wiring all integrated and ready for testing.
+        </p>
+
+        <h3>Functional Testing</h3>
+
+        <p>
+          The system has now reached functional testing. The safety circuit is operating
+          correctly, the E-stop removes motor power as intended, and the operator
+          controls are responding properly. Manual and automatic modes are the next step. 
+        </p>
+
+      </div>
+
+
+      <!-- =========================
+           SYSTEM DEMONSTRATION
+           ========================= -->
+
+      <h2>System Demonstration</h2>
 
       <p>
-        We have parts ordered and preliminary designs made. 
+        The video below shows the system operating in both manual and automatic modes,
+        testing for the corresponding andon light.
       </p>
 
+      <video controls class="project-video">
+
+        <source
+          src="System_Demo.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support the video tag.
+
+      </video>
+
+
+      <!-- =========================
+           CONTROL CABINET PHOTOS
+           ========================= -->
+
+      <h2>Control Cabinet</h2>
+
+      <p>
+        Final wiring and component layout inside the control cabinet.
+      </p>
+
+      <div class="project-image-grid">
+
+        <div>
+          <img
+            src="Cabinet_1.jpg"
+            alt="Completed control cabinet wiring"
+          >
+          <p>Completed control cabinet wiring</p>
+        </div>
+
+        <div>
+          <img
+            src="Cabinet_2.jpg"
+            alt="PLC and field wiring"
+          >
+          <p>PLC and field wiring</p>
+        </div>
+
+        <div>
+          <img
+            src="Cabinet_3.jpg"
+            alt="Final control cabinet component layout"
+          >
+          <p>Final component layout</p>
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           RETURN TO PROJECTS
+           ========================= -->
+
+      <div style="text-align: center; margin: 40px 0 10px;">
+
+        <a
+          class="button secondary"
+          href="../../index.html#projects"
+        >
+          Return to Projects
+        </a>
+
+      </div>
+
+
     </div>
+
   </main>
 
-  <div style="text-align: center; margin: 15px 0 40px;">
-  <a class="button secondary" href="../../index.html#projects">
-  Return to Projects
-</a>
-</div>
 
 </body>
+
 </html>
